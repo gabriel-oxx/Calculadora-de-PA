@@ -11,35 +11,45 @@
 </head>
 
 <body>
-  <section>
-    <label for="primeiro-termo">
-      <h2>
-        Primeiro termo da PA:
-      </h2>
-      <input id="primeiro-termo" type="number" placeholder="somente número">
-    </label>
-    <br />
-    <label for="razao">
-      <h2>
-        Razão da PA:
-      </h2>
-      <input type="number" id="razao" placeholder="Somente número">
-    </label>
-    <br />
-    <label for="ultimo-termo">
-      <h1>
-        Insira o último termo dessa progressão aritmética
-      </h1>
-      <input type="number" id="ultimo-termo" placeholder="Somente número">
-    </label>
-    <br />
-    <br/>
-    <button onclick="calculaPa();">
-      Enviar
-    </button>
-    <p id="resultado"></p>
-  </section>
-  <script type="text/javascript" src="../js/pa.js"></script>
+  <h1 id="cabecalio">
+  </h1>
+  <form>
+    <section id="conteudo">
+      <label for="primeiro-termo">
+        <h2>
+          Primeiro termo da PA:
+        </h2>
+        <input id="primeiro-termo" type="number" placeholder="somente número">
+      </label>
+      <br />
+      <label for="razao">
+        <h2>
+          Razão da PA:
+        </h2>
+        <input type="number" id="razao" placeholder="Somente número">
+      </label>
+      <br />
+      <label for="ultimo-termo">
+        <h1>
+          Insira o último termo dessa progressão aritmética
+        </h1>
+        <input type="number" id="ultimo-termo" placeholder="Somente número">
+      </label>
+    </section>
+  </form>
+  <br />
+  <br />
+  <button onclick="calculaPa()">
+    Mostrar
+  </button>
+  <br />
+  <br />
+  <div>
+    <section id="resultado">
+    </section>
+  </div>
+  <script src="js\pa.js">
+  </script>
 </body>
 
 </html>
